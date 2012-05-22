@@ -1,0 +1,35 @@
+Source: raspberrypi-firmware
+Priority: extra
+Maintainer: Will Thompson <will.thompson@collabora.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Section: libs
+Homepage: https://github.com/raspberrypi/firmware
+#Vcs-Git: todo
+#Vcs-Browser: todo
+
+Package: libraspberrypi-firmware0
+Section: libs
+Architecture: armel
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: EGL/GLES/OpenVG/etc. libraries for the Raspberry Pi's VideoCore IV
+ This package contains implementations of EGL, OpenGL ES, OpenVG, OpenWF
+ Composition, and others for the Raspberry Pi's VideoCore IV multimedia
+ processor.
+
+Package: libraspberrypi-firmware-dev
+Section: libdevel
+Architecture: armel
+Depends: libraspberrypi-firmware0 (= ${binary:Version}), ${misc:Depends}
+Description: EGL/GLES/OpenVG/etc. libraries for the Raspberry Pi's VideoCore IV (headers)
+ This package contains headers and other development files for implementations
+ of EGL, OpenGL ES, OpenVG, OpenWF Composition, and others for the Raspberry
+ Pi's VideoCore IV multimedia processor.
+
+Package: libraspberrypi-firmware-bin
+Section: misc
+Architecture: armel
+Depends: libraspberrypi-firmware0 (= ${binary:Version}), ${misc:Depends}
+Description: Miscellaneous Raspberry Pi utilities
+ This package contains various utilities for interacting with the Raspberry
+ Pi's VideoCore IV.
