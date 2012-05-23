@@ -1,3 +1,4 @@
 etc/ld.so.conf.d/vmcs.conf
 opt/vc/lib/lib*.so
 modules /lib/
+lib/udev/rules.d/10-local-rpi.rules

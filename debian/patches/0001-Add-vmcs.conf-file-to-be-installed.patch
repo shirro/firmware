@@ -1,11 +1,10 @@
-From 38f5c75b810a5769ff27e7d3f25474f46accbafc Mon Sep 17 00:00:00 2001
 From: Will Thompson <will@willthompson.co.uk>
 Date: Tue, 22 May 2012 17:35:58 +0100
-Subject: [PATCH] Add vmcs.conf file to be installed
+Subject: Add vmcs.conf file to be installed
 
 ---
- etc/ld.so.conf.d/vmcs.conf              |    1 +
- 1 files changed, 1 insertions(+)
+ etc/ld.so.conf.d/vmcs.conf |    1 +
+ 1 file changed, 1 insertion(+)
  create mode 100644 etc/ld.so.conf.d/vmcs.conf
 
 diff --git a/etc/ld.so.conf.d/vmcs.conf b/etc/ld.so.conf.d/vmcs.conf
@@ -15,6 +14,3 @@ index 0000000..b0a1aeb
 +++ b/etc/ld.so.conf.d/vmcs.conf
 @@ -0,0 +1 @@
 +/opt/vc/lib
--- 
-1.7.10
-
