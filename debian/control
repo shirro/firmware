@@ -1,7 +1,7 @@
 Source: raspberrypi-firmware
 Priority: extra
 Maintainer: Will Thompson <will.thompson@collabora.co.uk>
-Build-Depends: debhelper (>= 8.0.0)
+Build-Depends: debhelper (>= 8.0.0), quilt
 Standards-Version: 3.9.2
 Section: libs
 Homepage: https://github.com/raspberrypi/firmware
