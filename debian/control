@@ -11,7 +11,7 @@ Homepage: https://github.com/raspberrypi/firmware
 Package: libraspberrypi-firmware0
 Section: libs
 Architecture: armel
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: raspberrypi-bootloader (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Description: EGL/GLES/OpenVG/etc. libraries for the Raspberry Pi's VideoCore IV
  This package contains implementations of EGL, OpenGL ES, OpenVG, OpenWF
  Composition, and others for the Raspberry Pi's VideoCore IV multimedia
@@ -33,3 +33,11 @@ Depends: libraspberrypi-firmware0 (= ${binary:Version}), ${misc:Depends}
 Description: Miscellaneous Raspberry Pi utilities
  This package contains various utilities for interacting with the Raspberry
  Pi's VideoCore IV.
+
+Package: raspberrypi-bootloader
+Section: admin
+Architecture: armel
+Depends: ${misc:Depends}
+Description: Raspberry Pi bootloader
+ This package contains the Raspberry Pi bootloader (plus, temporarily, a
+ kernel).
