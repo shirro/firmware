@@ -1,3 +1,9 @@
+raspberrypi-firmware (2012.05.17-caf963d-2) UNRELEASED; urgency=low
+
+  * Call ldconfig in postinst and postrm.
+
+ -- Will Thompson <will.thompson@collabora.co.uk>  Wed, 23 May 2012 13:28:16 +0100
+
 raspberrypi-firmware (2012.05.17-caf963d) unstable; urgency=low
 
   * Initial Debian packaging for the Raspberry Pi “firmware”.
