@@ -4,3 +4,4 @@ boot/*.bin
 
 # FIXME: kernels should happen separately
 boot/kernel*.img
+modules /lib/
