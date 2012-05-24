@@ -14,8 +14,8 @@
 
 override_dh_fixperms:
 	dh_fixperms
-	chown -R :users debian/libraspberrypi-dev/opt/vc/src/hello_pi
-	chmod -R g+w debian/libraspberrypi-dev/opt/vc/src/hello_pi
+	chown -R :users debian/libraspberrypi-doc/opt/vc/src/hello_pi
+	chmod -R g+w debian/libraspberrypi-doc/opt/vc/src/hello_pi
 
 override_dh_strip:
 	dh_strip -Xboot

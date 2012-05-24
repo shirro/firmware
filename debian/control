@@ -26,6 +26,15 @@ Description: EGL/GLES/OpenVG/etc. libraries for the Raspberry Pi's VideoCore IV 
  of EGL, OpenGL ES, OpenVG, OpenWF Composition, and others for the Raspberry
  Pi's VideoCore IV multimedia processor.
 
+Package: libraspberrypi-doc
+Section: libdevel
+Architecture: armel
+Depends: libraspberrypi0 (= ${binary:Version}), ${misc:Depends}
+Description: EGL/GLES/OpenVG/etc. libraries for the Raspberry Pi's VideoCore IV (headers)
+ This package contains headers, example code, and other development files for
+ implementations of EGL, OpenGL ES, OpenVG, OpenWF Composition, and others for
+ the Raspberry Pi's VideoCore IV multimedia processor.
+
 Package: libraspberrypi-bin
 Section: misc
 Architecture: armel
