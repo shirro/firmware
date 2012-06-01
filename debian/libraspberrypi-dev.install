@@ -1,2 +1,2 @@
-opt/vc/include/*
-opt/vc/lib/lib*.a
+hardfp/opt/vc/include/* opt/vc/include
+hardfp/opt/vc/lib/lib*.a opt/vc/lib
